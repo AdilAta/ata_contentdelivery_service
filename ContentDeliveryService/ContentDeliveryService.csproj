@@ -16,7 +16,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="resources\Chapter1.mp4">
+    <None Update="resources\Repository.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="resources\UnitofWork.mp4">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

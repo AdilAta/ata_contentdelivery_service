@@ -24,7 +24,7 @@ namespace ContentDeliveryService.Controllers
         public FileContentResult DownloadVideo()
         {
             //    return File(System.IO.File.ReadAllBytes(Path.Combine(this.downloadSettings.RootPath, "Chapter 1.mp4")), "video/mp4", "MyFirstVideoFile.mp4");
-            return File(System.IO.File.ReadAllBytes(@"./resources/Chapter1.mp4"), "video/mp4", "MyFirstVideoFile.mp4");
+            return File(System.IO.File.ReadAllBytes(@"./resources/Repository.mp4"), "video/mp4", "Repository.mp4");
 
         }
 
