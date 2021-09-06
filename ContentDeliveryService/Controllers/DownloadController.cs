@@ -20,11 +20,25 @@ namespace ContentDeliveryService.Controllers
             this.downloadSettings = downloadSettings.Value;
         }
 
-        [HttpGet]
-        public FileContentResult DownloadVideo()
+        [HttpGet("home")]
+        public string Home()
+        {
+           return "download home page - test deployment slot";
+        }
+
+        [HttpGet("repository")]
+        public FileContentResult DownloadRepostiry()
         {
             //    return File(System.IO.File.ReadAllBytes(Path.Combine(this.downloadSettings.RootPath, "Chapter 1.mp4")), "video/mp4", "MyFirstVideoFile.mp4");
             return File(System.IO.File.ReadAllBytes(@"./resources/Repository.mp4"), "video/mp4", "Repository.mp4");
+
+        }
+
+        [HttpGet("unitofwork")]
+        public FileContentResult DownloadUnitOfWork()
+        {
+            //    return File(System.IO.File.ReadAllBytes(Path.Combine(this.downloadSettings.RootPath, "Chapter 1.mp4")), "video/mp4", "MyFirstVideoFile.mp4");
+            return File(System.IO.File.ReadAllBytes(@"./resources/UnitOfWork.mp4"), "video/mp4", "UnitOfWork.mp4");
 
         }
 
